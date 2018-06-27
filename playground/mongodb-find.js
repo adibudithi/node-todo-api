@@ -14,11 +14,11 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, client) => {
   //   console.log('unable to retrieve collection', err);
   // });
 
-  db.collection('Users').find({name: 'Adi'}).toArray().then((docs) => {
-    console.log('Users: ');
-    console.log(JSON.stringify(docs, undefined, 2));
-  }, (err) => {
-    console.log('user not found', err);
+  // db.collection('Users').find({name: 'Adi'}).toArray().then((docs) => {
+  //   console.log('Users: ');
+  //   console.log(JSON.stringify(docs, undefined, 2));
+  // }, (err) => {
+  //   console.log('user not found', err);
   });
 
   client.close();
